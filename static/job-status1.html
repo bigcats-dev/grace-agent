@@ -133,14 +133,19 @@
                                 </div>
                                 <div class="card-body">
                                     <form class="needs-validation" novalidate>
-
+                                        <div class="row mb-3">  
+                                            <div class="col-md-6">
+                                                <label for="insured_name" class="form-label">เลขเรื่อง</label> 
+                                                <input type="text" class="form-control" id="insured_name" disabled value="GA2504001" > 
+                                            </div>    
+                                        </div> 
                                         <div class="row mb-3">  
                                             <div class="col-md-4"> 
                                                 <label for="insurance_no" class="form-label">บริษัทประกันภัย <strong>*</strong></label>
                                                 <select class="form-select" id="insurance_no" required>
                                                     <option selected disabled value="">กรุณาเลือก</option>
                                                     <option>อลิอันซ์ อยุธยา ประกันภัย</option>
-                                                    <option>แอกซ่า ประกันภัย </option>
+                                                    <option selected>แอกซ่า ประกันภัย </option>
                                                     <option>กรุงเทพ ประกันภัย </option>
                                                     <option>ซมโปะ ประกันภัย  </option>
                                                     <option>กรุงเทพ ประกันภัย </option>
@@ -148,7 +153,7 @@
                                             </div> 
                                             <div class="col-md-4">
                                                 <label for="policy_no" class="form-label">เลขกรมธรรม์</label> 
-                                                <input type="text" class="form-control" id="policy_no" >
+                                                <input type="text" class="form-control" id="policy_no" value="25-001-NMOT-037820" >
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -160,7 +165,7 @@
                                                 <label for="insurance_type" class="form-label">ประเภท <strong>*</strong></label>
                                                 <select class="form-select" id="insurance_type" required>
                                                     <option selected disabled value="">กรุณาเลือก</option>
-                                                    <option>อัคคีภัย </option>
+                                                    <option selected>อัคคีภัย </option>
                                                     <option>ขนส่ง</option> 
                                                 </select> 
                                             </div> 
@@ -168,7 +173,7 @@
                                         <div class="row mb-3">  
                                             <div class="col-md-6">
                                                 <label for="insured_name" class="form-label">ผู้เอาประกัน</label> 
-                                                <input type="text" class="form-control" id="insured_name" >
+                                                <input type="text" class="form-control" id="insured_name" value="จักรพันธิ์ มาลีเทศ">
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -178,7 +183,7 @@
                                             </div>   
                                             <div class="col-md-6">
                                                 <label for="insured_tel" class="form-label">เบอร์โทรผู้เอาประกัน</label> 
-                                                <input type="text" class="form-control" id="insured_tel" >
+                                                <input type="text" class="form-control" id="insured_tel" value="089-9498801">
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -190,7 +195,7 @@
                                         <div class="row mb-3">  
                                             <div class="col-md-6">
                                                 <label for="reporter_name" class="form-label">ผู้แจ้งเหตุ <strong>*</strong></label> 
-                                                <input type="text" class="form-control" id="reporter_name" required>
+                                                <input type="text" class="form-control" id="reporter_name" value="จักรพันธิ์ มาลีเทศ">
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -200,7 +205,7 @@
                                             </div>   
                                             <div class="col-md-6">
                                                 <label for="reporter_tel" class="form-label">เบอร์โทรผู้แจ้งเหตุ <strong>*</strong></label> 
-                                                <input type="text" class="form-control" id="reporter_tel" required>
+                                                <input type="text" class="form-control" id="reporter_tel" value="089-9498801">
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -214,7 +219,7 @@
                                                 <label for="insured_property" class="form-label">ทรัพย์ที่เอาประกันภัย <strong>*</strong></label>
                                                 <select class="form-select" id="insured_property" required>
                                                     <option selected disabled value="">กรุณาเลือก</option>
-                                                    <option>บ้าน</option>
+                                                    <option selected>บ้าน</option>
                                                     <option>คอนโดมิเนียม </option>
                                                     <option>อาคาร</option>
                                                     <option>อื่นๆ </option> 
@@ -222,17 +227,17 @@
                                             </div>  
                                             <div class="col-md-6"> 
                                                 <label for="location_address" class="form-label">ที่ตั้งทรัพย์ที่เอาประกันภัย <strong>*</strong></label>
-                                                <input type="text" class="form-control" id="location_address" placeholder="ที่อยู่" required>
+                                                <input type="text" class="form-control" id="location_address" placeholder="ที่อยู่" value="29/12 หมู่ 12">
                                             </div>    
                                         </div>
                                         <div class="row mb-3">  
                                             <div class="col-md-3"> 
                                                 <label for="zip_code" class="form-label">รหัสไปรษณีย์ <strong>*</strong></label>
-                                                <input type="text" class="form-control" id="zip_code" placeholder="กรอก" required>
+                                                <input type="text" class="form-control" id="zip_code" placeholder="กรอก" value="13130">
                                             </div>  
                                             <div class="col-md-3"> 
                                                 <label for="validationCustom01" class="form-label">ตำบล <strong>*</strong></label>
-                                                <input type="text" class="form-control" id="zip_code"  required> 
+                                                <input type="text" class="form-control" id="zip_code" placeholder="กรอก" value="บางไทร"> 
                                             </div>    
                                             <div class="col-md-3"> 
                                                 <label for="validationCustom01" class="form-label">อำเภอ</label>
@@ -276,11 +281,6 @@
         <script src="js/bootstrap-datepicker.th.min.js"></script> 
 
         <script>
-
-            $('.sidebar-item').on('click', function() {
-                $(this).toggleClass('active');
-            });
-
             (() => {
             'use strict'
     

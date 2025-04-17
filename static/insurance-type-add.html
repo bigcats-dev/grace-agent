@@ -30,12 +30,12 @@
                         <li class="sidebar-header">
                             Pages
                         </li>
-                        <li class="sidebar-item active">
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="index.html">
                             <i class="align-middle" data-feather="list"></i> <span class="align-middle">รายการเอกสาร</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                        <li class="sidebar-item active">
                             <a class="sidebar-link" href="#">
                                 <i class="align-middle" data-feather="settings"></i> <span class="align-middle">ตั้งค่า</span>
                             </a>
@@ -43,7 +43,7 @@
                                 <li>
                                     <a href="insurance-company.html">บริษัทประกัน</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="insurance-type.html">ประเภทประกัน</a>
                                 </li>
                                 <li>
@@ -131,140 +131,42 @@
              
 						<div class="col-12 col-lg-12 col-xxl-12 d-flex">
 							<div class="card flex-fill">
-								<div class="card-header">
-									<div class="col">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <h3 class="h3 mb-0">รายการเอกสาร</h3> 
-                                            </div>
-                                            <div class="col-lg-6 text-end"> 
-                                                <a class="btn btn-primary" href="job-add.html">
-                                                    <i class="far fa-plus"></i>
-                                                    เปิดเรื่อง
-                                                </a>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">เพิ่มประเภทประกัน</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form class="needs-validation" novalidate>
+
+                                        <div class="row mb-3">   
+                                            <div class="col-md-6">
+                                                <label for="insured_name" class="form-label">ชื่อบประเภทประกัน <strong>*</strong></label> 
+                                                <input type="text" class="form-control" id="insured_name" >
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>    
+                                        </div>  
+                                        <div class="row mb-3">  
+                                            <div class="col-md-6"> 
+                                                <label for="zip_code" class="form-label">หมายเหตุ</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>   
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="row mt-4"> 
+                                            <div class="col-12 text-center">
+                                                <button class="btn btn-light" type="reset">ยกเลิก </button>
+                                                <button class="btn btn-success" type="submit">บันทึก</button>
                                             </div>
                                         </div>
-                                    </div>
-								</div>
-								<table class="table table-hover my-0">
-									<thead>
-										<tr>
-											<th>เลขเรื่อง</th>
-											<th>บริษัทประกัน</th>
-											<th>เลขกรมธรรม์ </th>
-											<th>ประเภท</th>
-											<th>ผู้เอาประกัน</th>
-											<th>เบอร์โทรผู้เอาประกัน</th>
-											<th>ผู้แจ้งเหตุ </th>
-											<th>เบอร์โทรผู้แจ้งเหตุ </th>  
-											<th class="text-center">สถานะ</th>
-											<th>แก้ไข</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>GA2504001</td>
-											<td>
-                                            กรุงเทพ ประกันภัย <br>
-                                            <small>
-                                                สาขาลาซาล 02-7458806 สาขาพัฒนาการ 02-7178600 <br>
-                                                2025098380 <br>
-                                                นวรัตน์ 
-                                            </small>
-                                            </td>
-											<td>25-001-NMOT-037820</td>
-											<td>ขนส่ง</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td> 
-											<td class="text-center">
-                                                <span class="badge bg-secondary">บันทึกเปิดเรื่อง</span>
-                                            </td> 
-											<td>
-                                                <a class="btn btn-danger btn-sm" href="job-status1.html">
-                                                    <i class="far fa-edit"></i> 
-                                                </a>
-                                            </td> 
-										</tr>
-										<tr>
-											<td>GA2504001</td>
-											<td>
-                                            กรุงเทพ ประกันภัย <br>
-                                            <small>
-                                                สาขาลาซาล 02-7458806 สาขาพัฒนาการ 02-7178600 <br>
-                                                2025098380 <br>
-                                                นวรัตน์ 
-                                            </small>
-                                            </td>
-											<td>25-001-NMOT-037820</td>
-											<td>ขนส่ง</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td> 
-											<td class="text-center">
-                                                <span class="badge bg-primary">มีนัดหมาย</span>
-                                            </td> 
-											<td>
-                                                <a class="btn btn-danger btn-sm" href="่job-status2.html">
-                                                    <i class="far fa-edit"></i> 
-                                                </a>
-                                            </td> 
-										</tr>
-										<tr>
-											<td>GA2504001</td>
-											<td>
-                                            กรุงเทพ ประกันภัย <br>
-                                            <small>
-                                                สาขาลาซาล 02-7458806 สาขาพัฒนาการ 02-7178600 <br>
-                                                2025098380 <br>
-                                                นวรัตน์ 
-                                            </small>
-                                            </td>
-											<td>25-001-NMOT-037820</td>
-											<td>ขนส่ง</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td> 
-											<td class="text-center">
-                                                <span class="badge bg-warning">จ่ายงานสำเร็จ</span>
-                                            </td> 
-											<td>
-                                                <a class="btn btn-danger btn-sm" href="่job-status3.html">
-                                                    <i class="far fa-edit"></i> 
-                                                </a>
-                                            </td> 
-										</tr>
-										<tr>
-											<td>GA2504001</td>
-											<td>
-                                            กรุงเทพ ประกันภัย <br>
-                                            <small>
-                                                สาขาลาซาล 02-7458806 สาขาพัฒนาการ 02-7178600 <br>
-                                                2025098380 <br>
-                                                นวรัตน์ 
-                                            </small>
-                                            </td>
-											<td>25-001-NMOT-037820</td>
-											<td>ขนส่ง</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td>
-											<td>จักรพันธิ์ มาลีเทศ</td>
-											<td>089-9498801</td> 
-											<td class="text-center">
-                                                <span class="badge bg-success">รายงานผลแล้ว</span>
-                                            </td> 
-											<td>
-                                                <a class="btn btn-primary btn-sm" href="่job-status4.html">
-                                                    <i class="far fa-eye"></i>
-                                                </a>
-                                            </td> 
-										</tr> 
-									</tbody>
-								</table>
-							</div>
+                                    </form>
+                                </div>
+                            </div>
 						</div> 
                     </div>
                 </main>
@@ -274,10 +176,32 @@
         <script src="js/app.js"></script>
         <script src="js/jquery.min.js"></script> 
         <script src="js/popper.min.js" ></script>
-        <script> 
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/bootstrap-datepicker.th.min.js"></script> 
+
+        <script>
+
             $('.sidebar-item').on('click', function() {
                 $(this).toggleClass('active');
             });
+
+            (() => {
+            'use strict'
+    
+            const forms = document.querySelectorAll('.needs-validation')
+    
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
         </script>
       
     </body>

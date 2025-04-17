@@ -6,3 +6,24 @@ body{
 .form-label strong{
     color: red;
 }
+.sidebar-item  ul{
+    display: none;
+}
+.sidebar-item.active  ul{
+    display: block;
+    list-style: none;
+    padding-left: 0px;
+} 
+.sidebar-item.active ul a{
+    color: #fff;  
+    line-height: 40px;
+    padding: 5px 35px 5px 65px;
+    width: 100%;
+    display: block;
+}
+.sidebar-item.active  ul li:hover{ 
+    background-color: rgba(255, 255, 255, .1);
+}
+.sidebar-item.active  ul li.active{ 
+    background-color: rgba(255, 255, 255, .1);
+}
